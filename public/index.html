@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seu Nome — Portfólio</title>
+<title>Miguel — Portfólio</title>
 <meta name="description" content="Portfólio profissional de Seu Nome, engenheiro(a) de software.">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -71,12 +71,10 @@
       <span class="sheet-index">B.</span>
       <h2>Projetos</h2>
     </div>
-
     <div class="timeline">
-
       <article class="timeline-item card">
         <div class="item-top">
-          <h3>Nome do Projeto 03</h3>
+          <h3>Nome do Projeto 1</h3>
           <span class="item-period">2026</span>
         </div>
         <p class="item-desc">Breve descrição do que o projeto faz e qual problema resolve.</p>
@@ -90,40 +88,6 @@
           <a href="https://github.com/seu-usuario" target="_blank" rel="noopener">GitHub</a>
         </div>
       </article>
-
-      <article class="timeline-item card">
-        <div class="item-top">
-          <h3>Nome do Projeto 02</h3>
-          <span class="item-period">2025</span>
-        </div>
-        <p class="item-desc">Breve descrição do que o projeto faz e qual problema resolve.</p>
-        <div class="tags">
-          <span class="tag">Vue.js</span>
-          <span class="tag">Express</span>
-        </div>
-        <div class="card-links">
-          <a href="projeto.html">Ver detalhes →</a>
-          <a href="https://github.com/seu-usuario" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </article>
-
-      <article class="timeline-item card">
-        <div class="item-top">
-          <h3>Nome do Projeto 01</h3>
-          <span class="item-period">2024</span>
-        </div>
-        <p class="item-desc">Breve descrição do que o projeto faz e qual problema resolve.</p>
-        <div class="tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JavaScript</span>
-        </div>
-        <div class="card-links">
-          <a href="projeto.html">Ver detalhes →</a>
-          <a href="https://github.com/seu-usuario" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </article>
-
     </div>
   </section>
 
@@ -144,16 +108,6 @@
         <p class="item-sub">Nome da Empresa / Instituição</p>
         <p class="item-desc">Breve descrição das responsabilidades e conquistas nessa posição.</p>
       </article>
-
-      <article class="timeline-item card">
-        <div class="item-top">
-          <h3>Cargo ou Atividade</h3>
-          <span class="item-period">2025</span>
-        </div>
-        <p class="item-sub">Nome da Empresa / Instituição</p>
-        <p class="item-desc">Breve descrição das responsabilidades e conquistas nessa posição.</p>
-      </article>
-
     </div>
   </section>
 
@@ -200,25 +154,59 @@
         </a>
       </div>
 
-      <form class="card" id="contact-form" novalidate>
-        <div class="form-field">
-          <label for="name">Nome</label>
-          <input type="text" id="name" name="name" required autocomplete="name">
-        </div>
-        <div class="form-field">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" required autocomplete="email">
-        </div>
-        <div class="form-field">
-          <label for="message">Mensagem</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">
-          Enviar mensagem
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h11M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <p class="form-note" id="form-note"></p>
-      </form>
+      <form
+  class="card"
+  id="contact-form"
+  action="https://formspree.io/f/xvkpjrzw"
+  method="POST"
+>
+  <div class="form-field">
+    <label for="name">Nome</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      required
+      autocomplete="name"
+    >
+  </div>
+
+  <div class="form-field">
+    <label for="email">E-mail</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+      autocomplete="email"
+    >
+  </div>
+
+  <div class="form-field">
+    <label for="message">Mensagem</label>
+    <textarea
+      id="message"
+      name="message"
+      required
+    ></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">
+    Enviar mensagem
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+      <path
+        d="M1 7h11M8 3l4 4-4 4"
+        stroke="currentColor"
+        stroke-width="1.4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </button>
+
+  <p class="form-note" id="form-note"></p>
+</form>
+
     </div>
   </section>
 

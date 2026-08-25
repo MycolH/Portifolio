@@ -38,25 +38,20 @@ const formNote = document.getElementById('form-note');
 
 if (contactForm) {
   contactForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-
     const name = contactForm.name.value.trim();
     const email = contactForm.email.value.trim();
     const message = contactForm.message.value.trim();
 
     if (!name || !email || !message) {
+      event.preventDefault();
+
       formNote.textContent = 'Preencha todos os campos antes de enviar.';
       formNote.dataset.state = 'error';
+
       return;
     }
 
-    // Envio real: troque por uma chamada a um serviço de e-mail
-    // (ex: EmailJS, Formspree, ou uma API própria no back-end).
-    const subject = encodeURIComponent(`Contato via portfólio — ${name}`);
-    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    window.location.href = `mailto:seu.email@exemplo.com?subject=${subject}&body=${body}`;
-
-    formNote.textContent = 'Abrindo seu cliente de e-mail para enviar a mensagem…';
+    formNote.textContent = 'Enviando mensagem...';
     formNote.dataset.state = 'ok';
   });
 }
