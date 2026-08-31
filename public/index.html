@@ -15,11 +15,11 @@
       <a href="index.html" class="logo"><span class="dot"></span>Miguel Honorio.dev</a>
       <nav>
         <ul class="nav-links">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#experiencias">Experiências</a></li>
-          <li><a href="#curriculo">Currículo</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#sobre" data-i18n="nav_sobre">Sobre</a></li>
+          <li><a href="#projetos" data-i18n="nav_projetos">Projetos</a></li>
+          <li><a href="#experiencias" data-i18n="nav_experiencias">Experiências</a></li>
+          <li><a href="#curriculo" data-i18n="nav_curriculo">Currículo</a></li>
+          <li><a href="#contato" data-i18n="nav_contato">Contato</a></li>
         </ul>
       </nav>
       <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
@@ -30,19 +30,19 @@
 
   <!-- PORTIFÓLIO / NOME -->
   <section class="hero wrap">
-    <span class="eyebrow">Portfólio</span>
+    <span class="eyebrow" data-i18n="eyebrow">Portfólio</span>
     <h1>Miguel Honório</h1>
-    <p class="role">Engenheiro(a) de Software — Belo Horizonte, MG</p>
+    <p class="role" data-i18n="hero_role">Engenheiro(a) de Software — Belo Horizonte, MG</p>
   </section>
 
   <!-- SOBRE MIM -->
   <section class="sheet wrap" id="sobre">
     <div class="sheet-head">
       <span class="sheet-index">A.</span>
-      <h2>Sobre Mim</h2>
+      <h2 data-i18n="head_sobre">Sobre Mim</h2>
     </div>
 
-    <div class="lang-toggle" role="group" aria-label="Idioma da apresentação">
+    <div class="lang-toggle" role="group" aria-label="Idioma do site">
       <button type="button" class="active" data-lang="pt">PT</button>
       <button type="button" data-lang="en">EN</button>
     </div>
@@ -69,23 +69,23 @@
   <section class="sheet wrap" id="projetos">
     <div class="sheet-head">
       <span class="sheet-index">B.</span>
-      <h2>Projetos</h2>
+      <h2 data-i18n="head_projetos">Projetos</h2>
     </div>
-    <div class="timeline">
-      <article class="timeline-item card">
-        <div class="item-top">
-          <h3>Nome do Projeto 1</h3>
-          <span class="item-period">2026</span>
+
+    <div class="project-cards">
+      <article class="project-card card">
+        <div class="project-card-img">
+          <img src="assets/img/projeto-1.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
         </div>
-        <p class="item-desc">Breve descrição do que o projeto faz e qual problema resolve.</p>
-        <div class="tags">
-          <span class="tag">React</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">PostgreSQL</span>
-        </div>
-        <div class="card-links">
-          <a href="projeto.html">Ver detalhes →</a>
-          <a href="https://github.com/seu-usuario" target="_blank" rel="noopener">GitHub</a>
+        <div class="project-card-body">
+          <h3 data-i18n="proj1_title">Sistema web de gestão Interna da Associação de Advogados da Copasa</h3>
+          <p class="item-desc" data-i18n="proj1_desc">Sistema web de gestão interna para a Associação de Advogados da Copasa. Fui membro da equipe que desenvolveu a aplicação durante a disciplina extensionista Trabalho Interdisciplinar: Aplicações Reais.</p>
+          <div class="tags">
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">Java</span>
+            <span class="tag">MariaDB</span>
+            <span class="tag">Java Script</span>
+          </div>
         </div>
       </article>
     </div>
@@ -95,18 +95,18 @@
   <section class="sheet wrap" id="experiencias">
     <div class="sheet-head">
       <span class="sheet-index">C.</span>
-      <h2>Experiências</h2>
+      <h2 data-i18n="head_experiencias">Experiências</h2>
     </div>
 
     <div class="timeline">
 
       <article class="timeline-item card">
         <div class="item-top">
-          <h3>Cargo ou Atividade</h3>
-          <span class="item-period">jan 2026 — atual</span>
+          <h3 data-i18n="exp_cargo">Cargo ou Atividade</h3>
+          <span class="item-period" data-i18n="exp_period">jan 2026 — atual</span>
         </div>
-        <p class="item-sub">Nome da Empresa / Instituição</p>
-        <p class="item-desc">Breve descrição das responsabilidades e conquistas nessa posição.</p>
+        <p class="item-sub" data-i18n="exp_empresa">Nome da Empresa / Instituição</p>
+        <p class="item-desc" data-i18n="exp_desc">Breve descrição das responsabilidades e conquistas nessa posição.</p>
       </article>
     </div>
   </section>
@@ -115,13 +115,13 @@
   <section class="sheet wrap" id="curriculo">
     <div class="sheet-head">
       <span class="sheet-index">D.</span>
-      <h2>Currículo</h2>
+      <h2 data-i18n="head_curriculo">Currículo</h2>
     </div>
 
     <div class="card resume-card">
-      <p>Baixe meu currículo completo em PDF, com formação, projetos e experiências detalhadas.</p>
+      <p data-i18n="resume_text">Baixe meu currículo completo em PDF, com formação, projetos e experiências detalhadas.</p>
       <a class="btn btn-primary" href="assets/doc/Miguel Honorio - Curriculum Vitae.pdf" download>
-        Baixar currículo
+        <span data-i18n="resume_btn">Baixar currículo</span>
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v9M3.5 7 7 10.5 10.5 7M2 13h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
@@ -131,7 +131,7 @@
   <section class="sheet wrap" id="contato">
     <div class="sheet-head">
       <span class="sheet-index">E.</span>
-      <h2>Contato</h2>
+      <h2 data-i18n="head_contato">Contato</h2>
     </div>
 
     <div class="contact-grid">
@@ -161,7 +161,7 @@
   method="POST"
 >
   <div class="form-field">
-    <label for="name">Nome</label>
+    <label for="name" data-i18n="form_name">Nome</label>
     <input
       type="text"
       id="name"
@@ -172,7 +172,7 @@
   </div>
 
   <div class="form-field">
-    <label for="email">E-mail</label>
+    <label for="email" data-i18n="form_email">E-mail</label>
     <input
       type="email"
       id="email"
@@ -183,7 +183,7 @@
   </div>
 
   <div class="form-field">
-    <label for="message">Mensagem</label>
+    <label for="message" data-i18n="form_message">Mensagem</label>
     <textarea
       id="message"
       name="message"
@@ -192,7 +192,7 @@
   </div>
 
   <button type="submit" class="btn btn-primary">
-    Enviar mensagem
+    <span data-i18n="form_send">Enviar mensagem</span>
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
       <path
         d="M1 7h11M8 3l4 4-4 4"
@@ -214,7 +214,7 @@
   <footer class="site-footer">
     <div class="wrap">
       <span>© 2026 Miguel Honorio</span>
-      <a href="#site-header">Voltar ao topo ↑</a>
+      <a href="#site-header" data-i18n="footer_back">Voltar ao topo ↑</a>
     </div>
   </footer>
 

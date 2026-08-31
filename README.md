@@ -21,17 +21,13 @@ Birth: 06/05/2006
 ## Estrutura do Repositório
 
 ```
- db
- |   db.json
  public
  |  assets
  |      css
- |      |    projetoStyle.css
  |      |    style.css
  |      img
  |      js
  |      |   script.js
- |      |   projetoScript.js
  index.html
  projeto.html
  README.md
