@@ -16,7 +16,6 @@ Birth: 06/05/2006
  - HTML
  - CSS
  - JS
- - JSON
 
 ## Estrutura do Repositório
 
@@ -29,6 +28,5 @@ Birth: 06/05/2006
  |      js
  |      |   script.js
  index.html
- projeto.html
  README.md
 ```
